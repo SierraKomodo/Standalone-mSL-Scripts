@@ -12,28 +12,28 @@ alias ctimeToReadable {
     ; Hours
     var %hours = 0
     if (%minutes >= 60) {
-        var %hours = $floor($calc(%minutes / $v2)
+        var %hours = $floor($calc(%minutes / $v2))
         var %minutes = calc(%minutes % $v2)
     }
     
     ; Days
     var %days = 0
     if (%hours >= 60) {
-        var %days = $floor($calc(%hours / $v2)
+        var %days = $floor($calc(%hours / $v2))
         var %hours = calc(%hours % $v2)
     }
     
     ; Months
     var %months = 0
     if (%days >= 60) {
-        var %months = $floor($calc(%days / $v2)
+        var %months = $floor($calc(%days / $v2))
         var %days = calc(%days % $v2)
     }
     
     ; Years
     var %years = 0
     if (%months >= 60) {
-        var %years = $floor($calc(%months / $v2)
+        var %years = $floor($calc(%months / $v2))
         var %months = calc(%months % $v2)
     }
     
